@@ -4,7 +4,7 @@ if [[ ! $EUID -eq 0 ]]; then
 fi
 
 # Install the logstash deb you have.
-dpkg -i logstash*.deb -y
+dpkg -i logstash*.deb
 
 # Copy the config file and template into place.
 cp logstash-banjo.conf /opt/logstash/bin/
